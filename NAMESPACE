@@ -1,0 +1,8 @@
+useDynLib(RTMLC, .registration=TRUE)
+
+importFrom(Rcpp, evalCpp)
+importFrom(MASS, ginv)
+
+export(Draw.RTMLC)
+export(Est.RTM)
+export(Est.RTMLC)

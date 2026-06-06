@@ -1,0 +1,26 @@
+Package: RTMLC
+Type: Package
+Title: Response Time Multilevel Latent Class IRT Models
+Version: 1.0
+Date: 2026-06-06
+Authors@R: c(
+    person("Luca", "Brusa", email = "luca.brusa@unimib.it", role = c("aut", "cre")),
+    person("Francesco", "Bartolucci", role = "aut"),
+    person("Fulvia", "Pennoni", role = "aut"),
+    person("Giorgio", "Vittadini", role = "aut"))
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: Provides functions to simulate and estimate Response Time Multilevel
+    Latent Class (RTMLC) IRT models for the joint analysis of response accuracy
+    and response time in multilevel item-response data. The model relies on
+    discrete latent variables at both the individual and cluster levels and
+    allows individual- and cluster-level covariates to be included in both the
+    response accuracy and response time components.
+Encoding: UTF-8
+LazyData: true
+Imports:
+    MASS,
+    Rcpp,
+    stats
+LinkingTo:
+    Rcpp,
+    RcppArmadillo
