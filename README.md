@@ -10,9 +10,10 @@ The code implements maximum likelihood estimation through the Expectation-Maximi
 
 To install the `RTMLC` package directly from GitHub:
 ```r
-# install.packages("devtools")
-require(devtools)
-devtools::install_github("LB1304/RTMLC")
+if (!requireNamespace("pak", quietly = TRUE))
+  install.packages("pak")
+pak::pkg_install("LB1304/RTMLC")
+library(RTMLC)
 ```
 
 To download the .tar.gz file (for manual installation), use [this link](https://github.com/LB1304/RTMLC/archive/main.tar.gz).
