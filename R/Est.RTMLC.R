@@ -421,7 +421,8 @@ Est.RTMLC <- function(data, nc1, nc2, J, k1, k2, param.init, control = NULL) {
              coefX.time=coefX.time,coefZ.time=coefZ.time,speed0.time=speed0.time,
              speed1.time=speed1.time,si2.time=si2.time,piv1=piv1,piv2=piv2,
              sup1.resp=sup1.resp,sup2.resp=sup2.resp,sup1.time=sup1.time,
-             sup2.time=sup2.time,nit=it,AIC=AIC,BIC=BIC)
+             sup2.time=sup2.time,nit=it,AIC=AIC,BIC=BIC,
+             PostProb.Grp = Pp, PostProb.Ind = Qmp)
   if(out.se) out = c(out,list(secoefX.resp=secoefX.resp,secoefZ.resp=secoefZ.resp,
                               sediff.resp=sediff.resp,secoefX.time=secoefX.time,
                               secoefZ.time=secoefZ.time,sespeed0.time=sespeed0.time,
