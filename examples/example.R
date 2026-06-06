@@ -35,7 +35,7 @@ Coef.Ind.Resp = seq(-1,1, length.out = NC.Ind)  # Individual-level regression co
 Coef.Clu.Time = seq(-1,1, length.out = NC.Clu)  # Cluster-level regression coefficients for response time
 Coef.Ind.Time = seq(-1,1, length.out = NC.Ind)  # Individual-level regression coefficients for response time
 
-Data <- Draw.LCIRT_Time(
+Data <- Draw.RTMLC(
   H, Enh, J, Jsel, NC.Clu, NC.Ind,
   Sup.Clu.Resp, Sup.Ind.Resp,
   Sup.Clu.Time, Sup.Ind.Time,
@@ -46,14 +46,14 @@ Data <- Draw.LCIRT_Time(
 
 
 #---- 2. Estimate the RTM model ----#
-Est0 <- Est.IRT_Time(
+Est0 <- Est.RTM(
   Data$Data, NC.Clu, NC.Ind, J,
   control = list(rel.tol = 1e-6)
 )
 
 
 #---- 3. Estimate the RTMLC model ----#
-Est <- Est.LCIRT_Time(
+Est <- Est.RTMLC(
   Data$Data, NC.Clu, NC.Ind, J, K.Clu, K.Ind, Est0, 
   control = list(rel.tol = 1e-6)
 )
