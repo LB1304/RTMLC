@@ -16,3 +16,19 @@ devtools::install_github("LB1304/RTMLC")
 ```
 
 To download the .tar.gz file (for manual installation), use [this link](https://github.com/LB1304/RTMLC/archive/main.tar.gz).
+
+The package includes three main user-level functions:
+
+- `Draw.RTMLC`, which generates simulated multilevel item-response data with response accuracy and response times under the RTMLC model;
+- `Est.RTM`, which estimates the baseline response accuracy and response time model without latent classes and can be used to obtain initial values for the full model;
+- `Est.RTMLC`, which estimates the full Response Time Multilevel Latent Class IRT model for a specified number of cluster- and individual-level latent classes.
+
+More details on the available options are accessible with the commands:
+```r
+help("Draw.RTMLC")
+help("Est.RTM")
+help("Est.RTMLC")
+```
+
+A small reproducible example based on simulated data is available in [`examples/example.R`](examples/example.R). The example illustrates how to generate data, estimate the baseline RTM model, estimate the full RTMLC model, and inspect the main estimated parameters.
+
