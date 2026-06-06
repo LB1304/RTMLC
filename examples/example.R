@@ -3,6 +3,7 @@ if (!requireNamespace("pak", quietly = TRUE))
 if (!requireNamespace("RTMLC", quietly = TRUE))
   pak::pkg_install("LB1304/RTMLC")
 library(RTMLC)
+set.seed(2801)
 
 
 #---- 1. Generate data ----#
