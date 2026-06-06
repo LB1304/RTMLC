@@ -1,7 +1,7 @@
-if (!requireNamespace("devtools", quietly = TRUE))
-  install.packages("devtools")
+if (!requireNamespace("pak", quietly = TRUE))
+  install.packages("pak")
 if (!requireNamespace("RTMLC", quietly = TRUE))
-  devtools::install_github("LB1304/RTMLC")
+  pak::pkg_install("LB1304/RTMLC")
 library(RTMLC)
 
 
