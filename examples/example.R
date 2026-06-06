@@ -1,4 +1,8 @@
-require(RTMLC)
+if (!requireNamespace("devtools", quietly = TRUE))
+  install.packages("devtools")
+if (!requireNamespace("RTMLC", quietly = TRUE))
+  devtools::install_github("LB1304/RTMLC")
+library(RTMLC)
 
 
 #---- 1. Generate data ----#
